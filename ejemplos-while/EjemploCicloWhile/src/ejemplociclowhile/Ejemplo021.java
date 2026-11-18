@@ -20,20 +20,22 @@ public class Ejemplo021 {
         entrada.useLocale(Locale.US);
         int limite;
         int contador = 1;
+        double suma = 0;
         System.out.println("Ingrese el Límite"); 
         limite = entrada.nextInt(); // 6
         while (contador <= limite){
             
             if (contador%2!=0) {
-                System.out.printf("Contador %d\n", 
-                    contador);
+            suma = suma + contador;
             }
             
             contador = contador + 1;
         }
-        
+        System.out.printf("La suma de impares es %d?\n",suma);
     }
 }
 /*
-
+Genrar un programa que me permita ingreser un limite
+por teclado y presentar la suma de todos los numeros impares que existan entre
+1 y el limete
 */
